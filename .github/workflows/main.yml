@@ -1,0 +1,38 @@
+name: RubyOnRails
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  test:
+
+    runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: postgres:12.2-alpine
+        env:
+          POSTGRES_DB: minekosan_test
+          POSTGRES_USER: admin
+          POSTGRES_PASSWORD: password
+          POSTGRES_HOST_AUTH_METHOD: trust
+        ports:
+          - 5432:5432
+
+    steps:
+      - uses: actions/checkout@master
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@master
+        with:
+          ruby-version: '2.7.2'
+          bundler-cache: true
+      - name: Run tests
+        run: |
+          bundle exec rails db:migrate
+          bundle exec rails db:seed
+          bundle exec rake test
+        env:
+          RAILS_ENV: test

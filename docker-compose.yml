@@ -7,4 +7,6 @@ services:
     environment:
       POSTGRES_USER: admin
       POSTGRES_PASSWORD: password
-      POSTEGRES_DB: minekosan_development
+      POSTGRES_DB: minekosan_development
+    ports:
+      - 5432:5432

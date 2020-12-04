@@ -4,3 +4,17 @@ require:
 
 Style/Documentation:
   Enabled: false
+
+Style/SymbolArray:
+  Enabled: true
+
+Style/StringLiterals:
+  Enabled: true
+  EnforcedStyle: single_quotes
+
+Style/FrozenStringLiteralComment:
+  Enabled: true
+  EnforcedStyle: always
+
+Style/SpecialGlobalVars:
+  EnforcedStyle: use_perl_names

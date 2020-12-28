@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2">
+      <h1>Contact</h1>
+        <div class="controls">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <%= form_with do |form| %>
+                  <%= form.label :username, "Username :" %>
+                  <%= form.text_field :username, class: "form-control" %>
+                <% end %>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <%= form_with do |form| %>
+                  <%= form.label :email, "Email :" %>
+                  <%= form.text_field :email, class: "form-control" %>
+                <% end %>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <%= form_with do |form| %>
+                  <%= form.label :message, "Message :" %>
+                  <%= form.text_area :message, class: "form-control", rows: 5 %>
+                <% end %>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <%= form_with do |form| %>
+                <%= form.submit "Send message", class: "btn btn-success btn-send" %>
+              <% end %>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>

@@ -37,7 +37,7 @@ group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
 
   gem 'rubocop', '~> 1.10'
-  gem 'rubocop-performance', '~> 1.9'
+  gem 'rubocop-performance', '~> 1.10'
   gem 'rubocop-rails', '~> 2.9'
 end
 

@@ -102,7 +102,6 @@ GEM
       actionmailer (>= 5.2)
       activemodel (>= 5.2)
     marcel (0.3.3)
-      mimemagic (~> 0.3.2)
     method_source (1.0.0)
     mimemagic (0.3.5)
     mini_mime (1.0.2)

@@ -104,9 +104,6 @@ GEM
     marcel (1.0.0)
     method_source (1.0.0)
     mini_mime (1.0.3)
-    mimemagic (0.3.10)
-      nokogiri (~> 1)
-      rake
     mini_portile2 (2.5.0)
     minitest (5.14.4)
     msgpack (1.4.2)

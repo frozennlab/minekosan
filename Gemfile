@@ -38,7 +38,7 @@ group :development, :test do
 
   gem 'rubocop', '~> 1.13'
   gem 'rubocop-performance', '~> 1.11'
-  gem 'rubocop-rails', '~> 2.9'
+  gem 'rubocop-rails', '~> 2.10'
 end
 
 group :development do
